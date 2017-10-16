@@ -1,0 +1,38 @@
+
+1)	Install the Docker tool box
+2)	Run mvn clean package
+3)	Run java –jar <jarname>
+4)	Localhost:8080
+5)	Package in docker
+Run the C:\Users\NRajagopalan\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Docker quickstart
+6)	Spotify
+a.	Docker ps
+b.	Run mvn install dockerfile:build
+c.	https://docs.docker.com/docker-for-windows/  if you need from cmd else do it from docker quickstart
+d.	docker run -p 8080:8080 -t springio/gs-spring-boot-docker
+e.	http://192.168.99.100:8080/ 
+7)	Fabric IO (not complete)
+a.	mvn clean package docker:build
+b.	docker run-p 8080:8080 –d naveen/demo1
+
+8)	Docker images
+9)	Docker ps
+10)	Docker kill <cid>
+11)	docker ps
+This command will list all running containers, showing information on them including their ID, name, base image name, and port forwarding.
+12)	docker build
+This command is used to define a container — it processes the Dockerfile and creates a new container definition. We’ll use this to define our microservice containers.
+13)	docker pull [image name]
+This command pulls the container image from the remote repository and stores the definition locally.
+14)	docker run
+This command starts a container based on a local or remote (e.g. DockerHub) container definition. We’ll go into this one quite a bit.
+15)	docker push
+This command publishes a built container definition to a repository, typically DockerHub.
+https://www.altoros.com/blog/how-to-deploy-spring-boot-applications-in-docker-containers/ 
+
+
+Node.js
+docker build -t naveen/node-demo .
+docker run -p 3000:3000 –d naveen/node-demo
+docker run -p 3000:3000 -d naveen/node-demo
+http://192.168.99.100:3000/ 
